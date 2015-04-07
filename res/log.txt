@@ -1,0 +1,48 @@
+2015-04-07T10:02:27.689, Hans logged in.
+2015-04-07T10:02:33.403, Hans clicked diplay text
+2015-04-07T10:02:34.522, Hans clicked diplay text
+2015-04-07T10:02:35.706, Hans clicked diplay text
+2015-04-07T10:02:37.763, Hans clicked diplay text
+2015-04-07T10:02:39.721, Hans clicked Open Log.txt
+2015-04-07T10:02:48.486, Hans clicked on open store
+2015-04-07T10:03:41.905, Hans logged in.
+2015-04-07T10:03:46.539, Hans clicked diplay text
+2015-04-07T10:03:48.842, Hans clicked tare
+2015-04-07T10:03:50.028, Hans clicked zero scale
+2015-04-07T10:03:50.862, Hans clicked add item.
+2015-04-07T10:03:51.723, Hans clicked gross control
+2015-04-07T10:04:06.445, Hans clicked dispay text
+2015-04-07T10:04:06.872, Hans clicked dispay text
+2015-04-07T10:04:07.070, Hans clicked dispay text
+2015-04-07T10:04:17.421, Hans logged in.
+2015-04-07T10:04:19.175, Hans clicked Open Log.txt
+2015-04-07T10:04:21.067, Hans clicked on open store
+2015-04-07T10:04:23.776, Hans clicked on disconnect
+2015-04-07T10:06:51.768, Hans logged in.
+2015-04-07T10:10:08.387, Simon logged in.
+2015-04-07T10:10:09.738, Simon clicked begin procedure!
+2015-04-07T10:10:19.205, Simon clicked begin procedure!
+2015-04-07T10:10:20.526, Simon clicked on disconnect
+2015-04-07T10:10:59.425, Hans logged in.
+2015-04-07T10:11:01.009, Hans clicked begin procedure!
+2015-04-07T10:19:17.176, Hans logged in.
+2015-04-07T10:19:18.508, Hans clicked begin procedure!
+2015-04-07T10:23:34.373, Hans logged in.
+2015-04-07T10:23:35.395, Hans clicked begin procedure!
+2015-04-07T10:24:36.652, Hans logged in.
+2015-04-07T10:24:39.445, Hans clicked begin procedure!
+2015-04-07T10:25:37.833, Hans logged in.
+2015-04-07T10:25:38.906, Hans clicked begin procedure!
+2015-04-07T10:26:50.043, Hans logged in.
+2015-04-07T10:26:51.214, Hans clicked begin procedure!
+2015-04-07T10:27:59.019, Hans logged in.
+2015-04-07T10:28:00.807, Hans clicked begin procedure!
+2015-04-07T10:28:04.610, Hans clicked begin procedure!
+2015-04-07T10:29:00.649, Hans logged in.
+2015-04-07T10:29:01.605, Hans clicked begin procedure!
+2015-04-07T10:29:04.029, Hans clicked begin procedure!
+2015-04-07T10:33:55.826, Hans logged in.
+2015-04-07T10:34:02.629, Hans clicked display weight
+2015-04-07T10:34:03.627, Hans clicked begin procedure!
+2015-04-07T10:34:26.586, Hans clicked Open Log.txt
+2015-04-07T10:34:35.653, Hans clicked on disconnect
