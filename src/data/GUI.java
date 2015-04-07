@@ -10,6 +10,7 @@ import java.io.*;
 import java.net.Socket;
 import java.time.LocalDateTime;
 import java.util.Arrays;
+import java.util.Scanner;
 
 
 /**
@@ -76,6 +77,7 @@ public class GUI {
     String user;
 
     String vareNummer = "";
+    String vareNavn = "";
     boolean verifiticeret = false;
     int counter = 0;
     double weightOnScale;
@@ -569,13 +571,14 @@ public class GUI {
         switch (counter) {
             case 0:
                 vareNummer = JOptionPane.showInputDialog("Indtast varenummer");
+                fileLookUp("store");
                 counter++;
                 break;
 
             case 1:
                 if (!verifiticeret) {
-                    String toBeConfirmed = "You are " + user + ", and you have chosen product nr. " + vareNummer;
-                    int i = JOptionPane.showConfirmDialog(null, toBeConfirmed, "Hmm", JOptionPane.YES_NO_OPTION);
+                    String toBeConfirmed = "You are " + user + ", and you have chosen product nr. " + vareNummer + " which is " + vareNavn;
+                    int i = JOptionPane.showConfirmDialog(null, toBeConfirmed, "WCU", JOptionPane.YES_NO_OPTION);
                     System.out.println(i);
                     if (i == 0) {
                         counter ++;
@@ -637,5 +640,33 @@ public class GUI {
     public String onlyDigits(String str) {
         str = str.replaceAll("[^0-9.]+", "");
         return str;
+    }
+
+    public void fileLookUp(String filename) {
+        try {
+            BufferedReader bufferedReader = new BufferedReader(new FileReader("res/" + filename + ".txt"));
+
+            System.out.println("Looking up item name corresponding to item nr. " + vareNummer + " in " + filename +".txt");
+            String str;
+
+            while ((str = bufferedReader.readLine()) != null) {
+                if (str.substring(0, str.indexOf(",")).equals(vareNummer)) {
+                    vareNavn = str;
+                    System.out.println(vareNavn);
+                }
+            }
+
+            bufferedReader.close();
+
+            // This is so stupid, but it's the only way it seems to run without errors ???????
+            vareNavn = vareNavn.substring(vareNavn.indexOf(","));
+            vareNavn = vareNavn.replaceAll(",", "");
+            vareNavn = vareNavn.trim();
+            System.out.println(vareNavn);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

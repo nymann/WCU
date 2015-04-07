@@ -149,3 +149,81 @@
 2015-04-07T12:32:32.072, Karsten clicked tare
 2015-04-07T12:32:41.328, Karsten clicked Open Log.txt
 2015-04-07T12:32:47.377, Karsten clicked on open store
+2015-04-07T12:34:05.520, Hej logged in.
+2015-04-07T12:34:07.883, Hej clicked begin procedure!
+2015-04-07T12:34:55.865, Hej clicked on connect
+2015-04-07T12:34:56.705, Hej clicked restart.
+2015-04-07T12:36:46.660, Karsten logged in.
+2015-04-07T12:37:28.849, Karsten clicked display weight
+2015-04-07T12:37:30.067, Karsten clicked tare
+2015-04-07T12:37:34.880, Karsten clicked Open Log.txt
+2015-04-07T12:55:08.916, Per logged in.
+2015-04-07T12:55:11.459, Per clicked begin procedure!
+2015-04-07T12:56:36.700, Hej logged in.
+2015-04-07T12:56:40.682, Hej clicked begin procedure!
+2015-04-07T12:57:30.362, Hej logged in.
+2015-04-07T12:57:32.561, Hej clicked begin procedure!
+2015-04-07T13:01:42.566, Bent logged in.
+2015-04-07T13:01:44.317, Bent clicked begin procedure!
+2015-04-07T13:02:46.479, Kent logged in.
+2015-04-07T13:02:47.756, Kent clicked begin procedure!
+2015-04-07T13:03:39.125, Clark logged in.
+2015-04-07T13:03:46.303, Clark clicked begin procedure!
+2015-04-07T13:15:02.671, Karsten logged in.
+2015-04-07T13:15:04.403, Karsten clicked begin procedure!
+2015-04-07T13:19:53.390, Hej logged in.
+2015-04-07T13:19:55.476, Hej clicked begin procedure!
+2015-04-07T13:20:49.652, Hej logged in.
+2015-04-07T13:20:51.142, Hej clicked begin procedure!
+2015-04-07T13:25:36.660, Kent logged in.
+2015-04-07T13:25:37.857, Kent clicked begin procedure!
+2015-04-07T13:26:57.605, Ken logged in.
+2015-04-07T13:26:58.735, Ken clicked begin procedure!
+2015-04-07T13:28:53.833, Niels logged in.
+2015-04-07T13:28:55.213, Niels clicked begin procedure!
+2015-04-07T13:29:54.894, Niels clicked Open Log.txt
+2015-04-07T13:30:00.425, Niels clicked on open store
+2015-04-07T13:31:23.199, Hans logged in.
+2015-04-07T13:31:24.570, Hans clicked begin procedure!
+2015-04-07T13:32:46.143, Hans logged in.
+2015-04-07T13:32:48.777, Hans clicked display weight
+2015-04-07T13:32:50.029, Hans clicked tare
+2015-04-07T13:32:51.451, Hans clicked begin procedure!
+2015-04-07T13:34:27.900, Kurt logged in.
+2015-04-07T13:34:29.889, Kurt clicked begin procedure!
+2015-04-07T13:38:47.178, Hans clicked begin procedure!
+2015-04-07T13:39:15.408, Kamille logged in.
+2015-04-07T13:39:17.967, Kamille clicked begin procedure!
+2015-04-07T13:42:10.866, Hans logged in.
+2015-04-07T13:42:13.664, Hans clicked begin procedure!
+2015-04-07T13:43:27.373, 123 logged in.
+2015-04-07T13:43:29.219, 123 clicked begin procedure!
+2015-04-07T13:47:22.362, Hans logged in.
+2015-04-07T13:47:25.356, Hans clicked begin procedure!
+2015-04-07T13:47:56.168, Hans logged in.
+2015-04-07T13:47:57.096, Hans clicked begin procedure!
+2015-04-07T13:49:13.465, Kurs logged in.
+2015-04-07T13:49:14.667, Kurs clicked begin procedure!
+2015-04-07T13:50:22.488, Hans logged in.
+2015-04-07T13:50:23.671, Hans clicked begin procedure!
+2015-04-07T13:51:17.719, Him logged in.
+2015-04-07T13:51:19.134, Him clicked begin procedure!
+2015-04-07T13:53:11.380, bb logged in.
+2015-04-07T13:53:13.845, bb clicked begin procedure!
+2015-04-07T13:54:26.254, Hans logged in.
+2015-04-07T13:54:28.620, Hans clicked begin procedure!
+2015-04-07T13:56:37.561, Karsten logged in.
+2015-04-07T13:56:42.810, Karsten clicked begin procedure!
+2015-04-07T13:58:11.712, Hans logged in.
+2015-04-07T13:58:13.049, Hans clicked begin procedure!
+2015-04-07T13:58:20.501, Hans clicked begin procedure!
+2015-04-07T13:58:24.257, Hans clicked begin procedure!
+2015-04-07T13:59:20.075, Hans logged in.
+2015-04-07T13:59:21.237, Hans clicked begin procedure!
+2015-04-07T13:59:27.010, Hans clicked begin procedure!
+2015-04-07T14:00:03.712, Hans logged in.
+2015-04-07T14:00:05.018, Hans clicked begin procedure!
+2015-04-07T14:00:49.396, Hans logged in.
+2015-04-07T14:00:50.541, Hans clicked begin procedure!
+2015-04-07T14:02:24.167, Hans logged in.
+2015-04-07T14:02:25.088, Hans clicked begin procedure!
