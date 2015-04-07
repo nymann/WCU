@@ -46,3 +46,106 @@
 2015-04-07T10:34:03.627, Hans clicked begin procedure!
 2015-04-07T10:34:26.586, Hans clicked Open Log.txt
 2015-04-07T10:34:35.653, Hans clicked on disconnect
+2015-04-07T11:08:06.887, Kristian logged in.
+2015-04-07T11:36:27.459, Karsten logged in.
+2015-04-07T11:36:32.531, Karsten clicked display weight
+2015-04-07T11:36:32.738, Karsten clicked display weight
+2015-04-07T11:36:32.925, Karsten clicked display weight
+2015-04-07T11:36:33.084, Karsten clicked display weight
+2015-04-07T11:36:36.058, Karsten clicked tare
+2015-04-07T11:36:36.900, Karsten clicked display weight
+2015-04-07T11:36:38.199, Karsten clicked gross control
+2015-04-07T11:37:18.593, Karsten logged in.
+2015-04-07T11:49:03.311, Karl logged in.
+2015-04-07T11:58:17.631, Karsten logged in.
+2015-04-07T11:58:22.053, Karsten clicked tare
+2015-04-07T11:58:22.784, Karsten clicked zero scale
+2015-04-07T11:59:26.639, Karsten logged in.
+2015-04-07T11:59:27.922, Karsten clicked display weight
+2015-04-07T11:59:29.047, Karsten clicked display weight
+2015-04-07T11:59:29.788, Karsten clicked tare
+2015-04-07T11:59:30.732, Karsten clicked zero scale
+2015-04-07T11:59:32.039, Karsten clicked tare
+2015-04-07T11:59:32.284, Karsten clicked tare
+2015-04-07T11:59:32.463, Karsten clicked tare
+2015-04-07T11:59:32.632, Karsten clicked tare
+2015-04-07T12:00:11.361, Is logged in.
+2015-04-07T12:00:12.911, Is clicked display weight
+2015-04-07T12:00:14.241, Is clicked tare
+2015-04-07T12:00:14.670, Is clicked tare
+2015-04-07T12:00:15.135, Is clicked zero scale
+2015-04-07T12:00:15.847, Is clicked tare
+2015-04-07T12:00:16.067, Is clicked tare
+2015-04-07T12:00:16.241, Is clicked tare
+2015-04-07T12:00:16.416, Is clicked tare
+2015-04-07T12:02:36.090, Karsten logged in.
+2015-04-07T12:02:37.382, Karsten clicked display weight
+2015-04-07T12:02:38.252, Karsten clicked tare
+2015-04-07T12:02:38.644, Karsten clicked tare
+2015-04-07T12:02:38.840, Karsten clicked tare
+2015-04-07T12:02:39.853, Karsten clicked display weight
+2015-04-07T12:02:42.902, Karsten clicked display weight
+2015-04-07T12:02:44.214, Karsten clicked tare
+2015-04-07T12:03:16.557, Karsten logged in.
+2015-04-07T12:03:18.093, Karsten clicked display weight
+2015-04-07T12:03:19.116, Karsten clicked tare
+2015-04-07T12:03:22.784, Karsten clicked display weight
+2015-04-07T12:04:50.631, 123 logged in.
+2015-04-07T12:04:51.926, 123 clicked tare
+2015-04-07T12:04:53.512, 123 clicked display weight
+2015-04-07T12:06:01.086, Kis logged in.
+2015-04-07T12:06:03.331, Kis clicked display weight
+2015-04-07T12:06:04.598, Kis clicked tare
+2015-04-07T12:07:10.618, 213 logged in.
+2015-04-07T12:07:11.861, 213 clicked display weight
+2015-04-07T12:07:13.929, 213 clicked tare
+2015-04-07T12:07:40.788, 213 clicked begin procedure!
+2015-04-07T12:09:20.652, Ka logged in.
+2015-04-07T12:09:22.460, Ka clicked display weight
+2015-04-07T12:09:23.422, Ka clicked display weight
+2015-04-07T12:09:25.583, Ka clicked display weight
+2015-04-07T12:09:30.024, Ka clicked tare
+2015-04-07T12:09:31.604, Ka clicked tare
+2015-04-07T12:09:55.711, 1234 logged in.
+2015-04-07T12:09:57.926, 1234 clicked display weight
+2015-04-07T12:09:58.474, 1234 clicked display weight
+2015-04-07T12:09:58.687, 1234 clicked display weight
+2015-04-07T12:09:58.876, 1234 clicked display weight
+2015-04-07T12:09:59.615, 1234 clicked display weight
+2015-04-07T12:10:00.209, 1234 clicked tare
+2015-04-07T12:10:42.654, Hans logged in.
+2015-04-07T12:10:43.890, Hans clicked display weight
+2015-04-07T12:12:58.364, Cancer logged in.
+2015-04-07T12:13:00.433, Cancer clicked display weight
+2015-04-07T12:13:01.478, Cancer clicked tare
+2015-04-07T12:13:10.837, Cancer clicked on connect
+2015-04-07T12:13:12.977, Cancer clicked display weight
+2015-04-07T12:13:16.078, Cancer clicked tare
+2015-04-07T12:13:38.617, Hans logged in.
+2015-04-07T12:13:40.811, Hans clicked tare
+2015-04-07T12:13:41.477, Hans clicked display weight
+2015-04-07T12:13:45.954, Hans clicked display weight
+2015-04-07T12:13:55.461, Hans clicked display weight
+2015-04-07T12:14:00.962, Hans clicked tare
+2015-04-07T12:14:46.227, Cancer logged in.
+2015-04-07T12:14:48.077, Cancer clicked display weight
+2015-04-07T12:14:49.001, Cancer clicked tare
+2015-04-07T12:15:00.515, Cancer clicked diplay text
+2015-04-07T12:15:17.060, Cancer clicked diplay text
+2015-04-07T12:25:47.843, Hej logged in.
+2015-04-07T12:25:51.987, Hej clicked display weight
+2015-04-07T12:27:07.051, Karsten logged in.
+2015-04-07T12:27:09.073, Karsten clicked tare
+2015-04-07T12:30:10.374, Karsten logged in.
+2015-04-07T12:30:13.809, Karsten clicked display weight
+2015-04-07T12:30:16.662, Karsten clicked tare
+2015-04-07T12:30:24.236, Karsten clicked display weight
+2015-04-07T12:30:25.401, Karsten clicked tare
+2015-04-07T12:30:55.483, Henning logged in.
+2015-04-07T12:31:01.346, Henning clicked display weight
+2015-04-07T12:31:02.337, Henning clicked tare
+2015-04-07T12:32:29.077, Karsten logged in.
+2015-04-07T12:32:30.924, Karsten clicked display weight
+2015-04-07T12:32:32.072, Karsten clicked tare
+2015-04-07T12:32:41.328, Karsten clicked Open Log.txt
+2015-04-07T12:32:47.377, Karsten clicked on open store

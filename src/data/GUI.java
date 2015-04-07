@@ -1,10 +1,10 @@
 package data;
 
-
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
+import java.awt.geom.Arc2D;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.net.Socket;
@@ -78,9 +78,16 @@ public class GUI {
     String vareNummer = "";
     boolean verifiticeret = false;
     int counter = 0;
+    double weightOnScale;
+    double tareAmmount;
 
-    // font for Display Text.
-    Font font = new Font("Arial", Font.PLAIN, 12);
+    // colors
+    Color bgColor = new Color(0x005f6b);
+    Color textColor = new Color(0xb8b9b9);
+    Color menuColor = new Color(0x024b55);
+    Color menuFontColor = new Color(0x70c0c0);
+    Color sidebarColor = new Color(0x015762);
+
 
     // header buttons
     JButton beginProcedure = new JButton();
@@ -89,6 +96,7 @@ public class GUI {
 
 
     public GUI() {
+        customFont();
         jFrame.setTitle("Weighting Console Unit - GROUP AWESOME");
         jFrame.setPreferredSize(new Dimension(width, height + 20));
         jFrame.setLayout(new BorderLayout());
@@ -137,6 +145,7 @@ public class GUI {
         jFrame.pack();
         jFrame.setVisible(false);
 
+        customFont();
         login();
 
 
@@ -263,9 +272,12 @@ public class GUI {
             displayWeight.setBounds(28, 208, 113, 14);
             BufferedImage displayWeightBtn = ImageIO.read(new File("res/img/displayWeight.png"));
             displayWeight.setIcon(new ImageIcon(displayWeightBtn));
+            //displayWeight.setText("Display Weight");
             displayWeight.setBorder(noBorder);
             displayWeight.setBackground(new Color(0x005f6b));
+            //displayWeight.setForeground(textColor);
             displayWeight.setToolTipText("text");
+            displayWeight.setOpaque(false);
             displayWeight.addActionListener(actionEvent -> {
                 sendMessage("S\r\n");
                 writeToLog(user + " clicked display weight");
@@ -282,8 +294,7 @@ public class GUI {
                 writeToLog(user + " clicked tare");
             });
 
-            textAreaTA.setBounds(370, 234, 150, 14);
-            textAreaTA.setFont(font);
+            textAreaTA.setBounds(37, 273, 200, 30);
             textAreaTA.setForeground(Color.white);
             textAreaTA.setBackground(new Color(0x005f6b));
             textAreaTA.setText("");
@@ -353,15 +364,13 @@ public class GUI {
                 writeToLog(user + " clicked diplay text");
             });
 
-            textAreaDW.setBounds(28, 234, 113, 14);
-            textAreaDW.setFont(font);
+            textAreaDW.setBounds(36, 230, 200, 30);
             textAreaDW.setBackground(new Color(0x005f6b));
             textAreaDW.setEditable(false);
             textAreaDW.setForeground(Color.white);
             textAreaDW.setText("");
 
             connectedAs.setBounds(600, 564, 200, 14);
-            connectedAs.setFont(font);
             connectedAs.setBackground(new Color(0x005f6b));
             connectedAs.setForeground(new Color(0x70c0c0));
 
@@ -484,11 +493,16 @@ public class GUI {
             switch (trimmedResponse) {
                 case "T ":
                     textAreaTA.setText(receivedFromServer.replaceAll("T", "").replaceAll("S", "").trim());
+                    tareAmmount = Double.parseDouble(onlyDigits(receivedFromServer));
+                    System.out.println(tareAmmount);
                     textAreaDW.setText("0.000 kg");
+                    weightOnScale = 0;
                     break;
 
                 case "S ":
                     textAreaDW.setText(receivedFromServer.replaceAll("S", "").trim());
+                    weightOnScale = Double.parseDouble(onlyDigits(receivedFromServer));
+                    System.out.println(weightOnScale);
                     break;
 
                 case "DW":
@@ -498,6 +512,8 @@ public class GUI {
                 case "Z ":
                     textAreaDW.setText("0.000 kg");
                     textAreaTA.setText(("0.000 kg"));
+                    weightOnScale = 0;
+                    tareAmmount = 0;
                     break;
 
                 case "D ":
@@ -571,7 +587,7 @@ public class GUI {
                 break;
 
             case 2:
-                System.out.println("Brugeren skal nu Tarérer");
+                System.out.println("Brugeren skal nu have containeren sat på vægten og derefter tarére");
                 counter++;
                 break;
 
@@ -600,5 +616,26 @@ public class GUI {
                 counter = 0;
                 break;
         }
+    }
+
+    public void customFont() {
+        Font basicFont = null;
+        try {
+            basicFont = Font.createFont(Font.TRUETYPE_FONT, new File("res/basictitlefont.ttf"));
+        } catch (FontFormatException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Font basic32 = basicFont.deriveFont(32f);
+        Font basic14 = basicFont.deriveFont(14f);
+
+        textAreaTA.setFont(basic32);
+        textAreaDW.setFont(basic32);
+    }
+
+    public String onlyDigits(String str) {
+        str = str.replaceAll("[^0-9.]+", "");
+        return str;
     }
 }
