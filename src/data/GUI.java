@@ -571,11 +571,13 @@ public class GUI {
         switch (counter) {
             case 0:
                 vareNummer = JOptionPane.showInputDialog("Indtast varenummer");
-                fileLookUp("store");
-                counter++;
+                if (!vareNummer.equals("")) {
+                    counter++;
+                }
                 break;
 
             case 1:
+                fileLookUp("store");
                 if (!verifiticeret) {
                     String toBeConfirmed = "You are " + user + ", and you have chosen product nr. " + vareNummer + " which is " + vareNavn;
                     int i = JOptionPane.showConfirmDialog(null, toBeConfirmed, "WCU", JOptionPane.YES_NO_OPTION);
@@ -590,13 +592,29 @@ public class GUI {
                 break;
 
             case 2:
-                System.out.println("Brugeren skal nu have containeren sat på vægten og derefter tarére");
-                counter++;
+                sendMessage("Z\r\n");
+                sendMessage("S\r\n");
+                String container = "When the container is on the scale, press OK.";
+                int i = JOptionPane.showConfirmDialog(null, container, "WCU", JOptionPane.OK_CANCEL_OPTION);
+                if (i == 2) {
+                    counter = 0;
+                }
+                else if (i == 0) {
+                    counter++;
+                    sendMessage("T\r\n");
+                }
                 break;
 
             case 3:
-                System.out.println("Påfyld vare");
-                counter++;
+                String message = "When the item you want to weight is in the scale, press OK";
+                int x = JOptionPane.showConfirmDialog(null, message, "WCU", JOptionPane.OK_CANCEL_OPTION);
+                if (x == 2) {
+                    counter = 0;
+                }
+                else if (x == 0) {
+                    counter++;
+                    sendMessage("S\r\n");
+                }
                 break;
 
             case 4:

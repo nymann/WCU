@@ -227,3 +227,26 @@
 2015-04-07T14:00:50.541, Hans clicked begin procedure!
 2015-04-07T14:02:24.167, Hans logged in.
 2015-04-07T14:02:25.088, Hans clicked begin procedure!
+2015-04-07T14:06:48.940, Karl logged in.
+2015-04-07T14:06:51.828, Karl clicked begin procedure!
+2015-04-07T14:07:14.430, Hans logged in.
+2015-04-07T14:07:20.470, Hans clicked begin procedure!
+2015-04-07T14:09:13.736, Karl logged in.
+2015-04-07T14:09:16.546, Karl clicked begin procedure!
+2015-04-07T14:11:57.126, Karsten logged in.
+2015-04-07T14:11:58.145, Karsten clicked begin procedure!
+2015-04-07T14:12:05.266, Karsten clicked begin procedure!
+2015-04-07T14:13:14.511, Karsten logged in.
+2015-04-07T14:13:15.829, Karsten clicked begin procedure!
+2015-04-07T14:14:57.763, Hej logged in.
+2015-04-07T14:15:00.490, Hej clicked begin procedure!
+2015-04-07T14:17:43.796, Kurt logged in.
+2015-04-07T14:17:47.300, Kurt clicked begin procedure!
+2015-04-07T14:22:45.264, Helge logged in.
+2015-04-07T14:22:46.638, Helge clicked begin procedure!
+2015-04-07T14:23:55.398, Helge logged in.
+2015-04-07T14:24:00.609, Helge clicked begin procedure!
+2015-04-07T14:25:09.397, Helge logged in.
+2015-04-07T14:25:11.697, Helge clicked begin procedure!
+2015-04-07T14:26:01.870, Hej logged in.
+2015-04-07T14:26:03.627, Hej clicked begin procedure!
