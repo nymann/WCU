@@ -250,3 +250,54 @@
 2015-04-07T14:25:11.697, Helge clicked begin procedure!
 2015-04-07T14:26:01.870, Hej logged in.
 2015-04-07T14:26:03.627, Hej clicked begin procedure!
+2015-04-09T20:54:14.026, Hans logged in.
+2015-04-09T20:54:21.725, Hans clicked display weight
+2015-04-09T20:54:22.820, Hans clicked tare
+2015-04-09T20:54:27.265, Hans clicked gross control
+2015-04-09T20:54:30.754, Hans clicked begin procedure!
+2015-04-09T20:54:35.046, Hans clicked begin procedure!
+2015-04-09T20:54:41.414, Hans clicked begin procedure!
+2015-04-09T20:55:10.547, Hans clicked add item.
+2015-04-09T20:55:11.125, Hans clicked add item.
+2015-04-09T21:06:14.390, Kim logged in.
+2015-04-09T21:06:18.650, Kim clicked begin procedure!
+2015-04-09T21:08:11.277, Karl logged in.
+2015-04-09T21:08:13.755, Karl clicked zero scale
+2015-04-09T21:08:16.538, Karl clicked begin procedure!
+2015-04-09T21:11:45.049, Karl logged in.
+2015-04-09T21:11:53.186, Karl clicked zero scale
+2015-04-09T21:11:54.637, Karl clicked begin procedure!
+2015-04-09T21:14:15.521, lot logged in.
+2015-04-09T21:14:17.545, lot clicked begin procedure!
+2015-04-09T21:18:57.713, Hans logged in.
+2015-04-09T21:18:58.832, Hans clicked begin procedure!
+2015-04-09T21:20:17.238, Karl logged in.
+2015-04-09T21:20:18.469, Karl clicked begin procedure!
+2015-04-09T21:22:13.288, Hans logged in.
+2015-04-09T21:22:14.450, Hans clicked begin procedure!
+2015-04-09T21:27:12.109, Hans logged in.
+2015-04-09T21:27:18.517, Hans clicked begin procedure!
+2015-04-09T21:31:15.394, Hans logged in.
+2015-04-09T21:31:16.543, Hans clicked begin procedure!
+2015-04-09T21:34:45.970, Hans logged in.
+2015-04-09T21:34:47.038, Hans clicked begin procedure!
+2015-04-09T21:47:08.810, Hans logged in.
+2015-04-09T21:47:10.172, Hans clicked begin procedure!
+2015-04-09T21:47:59.031, Hans logged in.
+2015-04-09T21:48:00.157, Hans clicked begin procedure!
+2015-04-09T21:48:21.572, Hans finished a weight session, the item was: 1, Asparagus, the gross weight was: 30.0 kg, and the net weight was: 20.0 kg.
+2015-04-09T21:50:25.040, Hans logged in.
+2015-04-09T21:50:26.242, Hans clicked begin procedure!
+2015-04-09T21:50:42.625, Hans logged in.
+2015-04-09T21:52:03.175, Hans logged in.
+2015-04-09T21:52:28.833, Hans logged in.
+2015-04-09T21:52:31.599, Hans clicked display weight
+2015-04-09T21:52:31.759, Hans clicked display weight
+2015-04-09T21:52:32.531, Hans clicked tare
+2015-04-09T21:52:33.800, Hans clicked zero scale
+2015-04-09T21:52:34.635, Hans clicked tare
+2015-04-09T21:52:35.173, Hans clicked display weight
+2015-04-09T21:52:39.137, Hans clicked begin procedure!
+2015-04-09T21:55:13.992, Hans logged in.
+2015-04-09T22:07:38.210, Hans clicked on open store
+2015-04-09T22:20:25.364, Hans clicked begin procedure!

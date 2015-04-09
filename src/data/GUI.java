@@ -4,13 +4,11 @@ import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
-import java.awt.geom.Arc2D;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.net.Socket;
 import java.time.LocalDateTime;
 import java.util.Arrays;
-import java.util.Scanner;
 
 
 /**
@@ -313,7 +311,7 @@ public class GUI {
                 writeToLog(user + " clicked zero scale");
             });
 
-
+            grossControl.setVisible(false);
             grossControl.setBounds(29, 385, 109, 14);
             BufferedImage grossControlBtn = ImageIO.read(new File("res/img/grossControl.png"));
             grossControl.setIcon(new ImageIcon(grossControlBtn));
@@ -324,7 +322,7 @@ public class GUI {
                 writeToLog(user + " clicked gross control");
             });
 
-
+            addItem.setVisible(false);
             addItem.setBounds(368, 385, 64, 14);
             BufferedImage addItemBtn = ImageIO.read(new File("res/img/addItem.png"));
             addItem.setIcon(new ImageIcon(addItemBtn));
@@ -333,8 +331,10 @@ public class GUI {
             addItem.setToolTipText("text");
             addItem.addActionListener(actionEvent -> {
                 writeToLog(user + " clicked add item.");
+
             });
 
+            setScaleOptions.setVisible(false);
             setScaleOptions.setBounds(629, 385, 140, 14);
             BufferedImage setScaleOptionsBtn = ImageIO.read(new File("res/img/setScaleOptions.png"));
             setScaleOptions.setIcon(new ImageIcon(setScaleOptionsBtn));
@@ -393,7 +393,7 @@ public class GUI {
         userPanel.add(passwordLbl);
         userPanel.add(passwordFld);
 
-        int input = JOptionPane.showConfirmDialog(null, userPanel, "Enter your password:" ,JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
+        int input = JOptionPane.showConfirmDialog(null, userPanel, "Login" ,JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
 
         char[] correctPassword = {'1', '2', '3', '4'};
 
@@ -496,7 +496,6 @@ public class GUI {
                 case "T ":
                     textAreaTA.setText(receivedFromServer.replaceAll("T", "").replaceAll("S", "").trim());
                     tareAmmount = Double.parseDouble(onlyDigits(receivedFromServer));
-                    System.out.println(tareAmmount);
                     textAreaDW.setText("0.000 kg");
                     weightOnScale = 0;
                     break;
@@ -504,7 +503,6 @@ public class GUI {
                 case "S ":
                     textAreaDW.setText(receivedFromServer.replaceAll("S", "").trim());
                     weightOnScale = Double.parseDouble(onlyDigits(receivedFromServer));
-                    System.out.println(weightOnScale);
                     break;
 
                 case "DW":
@@ -614,27 +612,42 @@ public class GUI {
                 else if (x == 0) {
                     counter++;
                     sendMessage("S\r\n");
+                    //sendMessage("T\r\n");
                 }
                 break;
 
             case 4:
-                System.out.println("Afmål nettovægt");
-                counter++;
+                if (weightOnScale != 0.0) {
+                    System.out.print("Net weight: ");
+                    System.out.println(weightOnScale);
+                    counter++;
+                }
                 break;
 
             case 5:
-                System.out.println("Foretag bruttokontrol");
-                counter++;
+                System.out.print("Gross weight: ");
+                System.out.println(weightOnScale + tareAmmount);
+                String grossWeight = String.valueOf(weightOnScale + tareAmmount);
+                grossWeight = grossWeight + " KG";
+                int i1 = JOptionPane.showConfirmDialog(null, grossWeight, "Gross Weight", JOptionPane.YES_NO_OPTION);
+                if (i1 == 0) {
+                    counter++;
+                }
+                else {
+                    counter = 2;
+                }
                 break;
 
             case 6:
-                System.out.println("Afskriv forbrugt råvare i database og indfør afvejningen i loggen");
+                grossWeight = String.valueOf(weightOnScale + tareAmmount);
+                String toLog = user + " finished a weight session, the item was: " + vareNummer + ", " + vareNavn + ", the gross weight was: " + grossWeight + " kg, and the net weight was: " + weightOnScale + " kg.";
+                writeToLog(toLog);
                 counter++;
                 break;
 
             case 7:
                 System.out.println("Succes, brugeren kan nu starte forfra");
-                counter = 0;
+                counter = -1;
                 break;
         }
     }
@@ -670,7 +683,7 @@ public class GUI {
             while ((str = bufferedReader.readLine()) != null) {
                 if (str.substring(0, str.indexOf(",")).equals(vareNummer)) {
                     vareNavn = str;
-                    System.out.println(vareNavn);
+                    //System.out.println(vareNavn);
                 }
             }
 
@@ -680,7 +693,7 @@ public class GUI {
             vareNavn = vareNavn.substring(vareNavn.indexOf(","));
             vareNavn = vareNavn.replaceAll(",", "");
             vareNavn = vareNavn.trim();
-            System.out.println(vareNavn);
+            //System.out.println(vareNavn);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
