@@ -167,7 +167,7 @@ public class GUI {
             beginProcedure.setBackground(new Color(0x005f6b));
             beginProcedure.setOpaque(false);
             beginProcedure.addActionListener(actionEvent -> {
-                writeToLog(user + " clicked begin procedure!");
+                writeToLog(user + " clicked begin procedure!", "log");
                 counter = 0;
                 while (counter >= 0) {
                     beginProcedure();
@@ -183,7 +183,7 @@ public class GUI {
             openLog.setToolTipText("text");
             openLog.setOpaque(false);
             openLog.addActionListener(actionEvent -> {
-                writeToLog(user + " clicked Open Log.txt");
+                writeToLog(user + " clicked Open Log.txt", "log");
                 openFile("res/log.txt");
             });
 
@@ -196,13 +196,13 @@ public class GUI {
             openStore.setToolTipText("text");
             openStore.setOpaque(false);
             openStore.addActionListener(actionEvent -> {
-                writeToLog(user + " clicked on open store");
+                writeToLog(user + " clicked on open store", "log");
                 openFile("res/store.txt");
             });
 
 
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("GUI, failed to initialize! This should never happen.");
         }
     }
 
@@ -214,13 +214,13 @@ public class GUI {
             BufferedImage commandsBtn = ImageIO.read(new File("res/img/connect.png"));
             connect.setIcon(new ImageIcon(commandsBtn));
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("GUI, failed to initialize! This should never happen.");
         }
         connect.setBorder(noBorder);
         connect.setBackground(new Color(0x024b55));
         connect.setToolTipText("connect!");
         connect.addActionListener(actionEvent -> {
-            writeToLog(user + " clicked on connect");
+            writeToLog(user + " clicked on connect", "log");
         });
 
         restart.setBounds(371, 143, 57, 14);
@@ -228,18 +228,18 @@ public class GUI {
             BufferedImage restartBtn = ImageIO.read(new File("res/img/restart.png"));
             restart.setIcon(new ImageIcon(restartBtn));
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("GUI, failed to initialize! This should never happen.");
         }
 
         restart.setBorder(noBorder);
         restart.setBackground(new Color(0x024b55));
         restart.setToolTipText("Click to restart the procedure!");
         restart.addActionListener(actionEvent -> {
-            writeToLog(user + " clicked restart.");
+            writeToLog(user + " clicked restart.", "log");
             try {
                 Runtime.getRuntime().exec("java -jar WCU.jar");
             } catch (IOException e) {
-                e.printStackTrace();
+                System.out.println("GUI, failed to initialize! This should never happen.");
             }
             System.exit(1);
         });
@@ -249,18 +249,18 @@ public class GUI {
         try {
             disconnectBtn = ImageIO.read(new File("res/img/disconnect.png"));
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("GUI, failed to initialize! This should never happen.");
         }
         disconnect.setIcon(new ImageIcon(disconnectBtn));
         disconnect.setBorder(noBorder);
         disconnect.setBackground(new Color(0x024b55));
         disconnect.setToolTipText("Click to disconnect from the weight!");
         disconnect.addActionListener(actionEvent -> {
-            writeToLog(user + " clicked on disconnect");
+            writeToLog(user + " clicked on disconnect", "log");
             try {
                 Runtime.getRuntime().exec("java -jar WCU.jar");
             } catch (IOException e) {
-                e.printStackTrace();
+                System.out.println("GUI, failed to initialize! This should never happen.");
             }
             System.exit(1);
         });
@@ -280,7 +280,7 @@ public class GUI {
             displayWeight.setOpaque(false);
             displayWeight.addActionListener(actionEvent -> {
                 sendMessage("S\r\n");
-                writeToLog(user + " clicked display weight");
+                writeToLog(user + " clicked display weight", "log");
             });
 
             tare.setBounds(384, 208, 32, 14);
@@ -291,7 +291,7 @@ public class GUI {
             tare.setToolTipText("text");
             tare.addActionListener(actionEvent -> {
                 sendMessage("T\r\n");
-                writeToLog(user + " clicked tare");
+                writeToLog(user + " clicked tare", "log");
             });
 
             textAreaTA.setBounds(37, 273, 200, 30);
@@ -308,7 +308,7 @@ public class GUI {
             zeroScale.setToolTipText("text");
             zeroScale.addActionListener(actionEvent -> {
                 sendMessage("Z\r\n");
-                writeToLog(user + " clicked zero scale");
+                writeToLog(user + " clicked zero scale", "log");
             });
 
             grossControl.setVisible(false);
@@ -319,7 +319,7 @@ public class GUI {
             grossControl.setBackground(new Color(0x005f6b));
             grossControl.setToolTipText("text");
             grossControl.addActionListener(actionEvent -> {
-                writeToLog(user + " clicked gross control");
+                writeToLog(user + " clicked gross control", "log");
             });
 
             addItem.setVisible(false);
@@ -330,7 +330,7 @@ public class GUI {
             addItem.setBackground(new Color(0x005f6b));
             addItem.setToolTipText("text");
             addItem.addActionListener(actionEvent -> {
-                writeToLog(user + " clicked add item.");
+                writeToLog(user + " clicked add item.", "log");
 
             });
 
@@ -342,7 +342,7 @@ public class GUI {
             setScaleOptions.setBackground(new Color(0x005f6b));
             setScaleOptions.setToolTipText("set scale options");
             setScaleOptions.addActionListener(actionEvent -> {
-                writeToLog(user + " clicked set scale options");
+                writeToLog(user + " clicked set scale options", "log");
             });
 
             displayText.setBounds(366, 564, 95, 14);
@@ -353,7 +353,7 @@ public class GUI {
             displayText.setToolTipText("text");
             displayText.addActionListener(actionEvent -> {
                 sendMessage("D " + '"' + jTextFieldDT.getText() + '"' + "\r\n");
-                writeToLog(user + " clicked dispay text");
+                writeToLog(user + " clicked dispay text", "log");
             });
 
             jTextFieldDT.setBounds(26, 557, 321, 29);
@@ -363,7 +363,7 @@ public class GUI {
             jTextFieldDT.setBorder(noBorder);
             jTextFieldDT.addActionListener(actionEvent -> {
                 sendMessage("D " + '"' + jTextFieldDT.getText() + '"' + "\r\n");
-                writeToLog(user + " clicked diplay text");
+                writeToLog(user + " clicked diplay text", "log");
             });
 
             textAreaDW.setBounds(36, 230, 200, 30);
@@ -377,7 +377,7 @@ public class GUI {
             connectedAs.setForeground(new Color(0x70c0c0));
 
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("GUI, failed to initialize! This should never happen.");
         }
     }
 
@@ -407,7 +407,7 @@ public class GUI {
             if (Arrays.equals(correctPassword, enteredPassword)) {
                 System.out.println("\nThe password entered is correct!");
                 jFrame.setVisible(true);
-                writeToLog(user + " logged in.");
+                writeToLog(user + " logged in.", "log");
                 startRunning();
             }
 
@@ -471,7 +471,7 @@ public class GUI {
             outputStream.flush();
 
         } catch (IOException e) {
-            e.printStackTrace();
+           System.out.println("Couldn't send message to Scale");
         }
     }
 
@@ -521,38 +521,38 @@ public class GUI {
                     break;
 
                 default:
-                    writeToLog("Command not found:" + trimmedResponse);
+                    writeToLog("Command not found:" + trimmedResponse, "log");
                     System.out.println(trimmedResponse);
             }
         } catch (IOException e) {
-           System.out.println("Vi kunne ikke få svar fra serveren");
+           System.out.println("No response from server!");
             try {
                 wait(500);
             } catch (InterruptedException e1) {
-                e1.printStackTrace();
+                System.out.println("Tried to wait for server response, it failed.");
             }
         }
 
         return receivedFromServer;
     }
 
-    private void writeToLog(String m) {
-        File log = new File("res/log.txt");
+    private void writeToLog(String m, String n) {
+        File log = new File("res/" + n +".txt");
 
         if (!log.exists()) {
             try {
                 log.createNewFile();
             } catch (IOException e) {
-                e.printStackTrace();
+                System.out.println("The log filed didn't exist, but we failed to create it!");
             }
         }
 
         try {
-            FileWriter fw = new FileWriter("res/log.txt", true);
+            FileWriter fw = new FileWriter("res/" + n + ".txt", true);
             fw.write(LocalDateTime.now() + ", " + m + "\r\n");
             fw.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Tried to create the file writer, it failed. Possible error, couldn't get the local time.");
         }
     }
 
@@ -561,16 +561,23 @@ public class GUI {
         try {
             pb.start();
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Couldn't open Notepad.exe, user is probably using a different OS than Windows");
         }
     }
 
     public void beginProcedure() {
         switch (counter) {
             case 0:
-                vareNummer = JOptionPane.showInputDialog("Indtast varenummer");
-                if (!vareNummer.equals("")) {
+                vareNummer = JOptionPane.showInputDialog("Insert item number");
+                int vareNrSomINT = Integer.parseInt(vareNummer);
+                System.out.println(vareNrSomINT);
+                if ((!vareNummer.equals("")) && vareNrSomINT < 19) {
                     counter++;
+                }
+                else {
+                    String m = "The inserted item number " + vareNrSomINT +", is not in the Store catalog, click on Open Store.txt to see the catalog!";
+                    JOptionPane.showMessageDialog(null, m, "ERROR", JOptionPane.OK_OPTION);
+                    counter = -1;
                 }
                 break;
 
@@ -641,7 +648,7 @@ public class GUI {
             case 6:
                 grossWeight = String.valueOf(weightOnScale + tareAmmount);
                 String toLog = user + " finished a weight session, the item was: " + vareNummer + ", " + vareNavn + ", the gross weight was: " + grossWeight + " kg, and the net weight was: " + weightOnScale + " kg.";
-                writeToLog(toLog);
+                writeToLog(toLog, "storeLog");
                 counter++;
                 break;
 
@@ -657,9 +664,9 @@ public class GUI {
         try {
             basicFont = Font.createFont(Font.TRUETYPE_FONT, new File("res/basictitlefont.ttf"));
         } catch (FontFormatException e) {
-            e.printStackTrace();
+            System.out.println("Couldn't format the cust font basictitlefont.");
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Couldn't create the custom font, is it in the res folder?");
         }
         Font basic32 = basicFont.deriveFont(32f);
         Font basic14 = basicFont.deriveFont(14f);
@@ -693,11 +700,12 @@ public class GUI {
             vareNavn = vareNavn.substring(vareNavn.indexOf(","));
             vareNavn = vareNavn.replaceAll(",", "");
             vareNavn = vareNavn.trim();
-            //System.out.println(vareNavn);
+
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            System.out.println("We couldn't find the .txt file, are you sure you have a 'res' folder?");
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Failed to lookup the file, we couldn't create the reader.");
         }
     }
+
 }

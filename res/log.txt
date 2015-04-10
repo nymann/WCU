@@ -301,3 +301,61 @@
 2015-04-09T21:55:13.992, Hans logged in.
 2015-04-09T22:07:38.210, Hans clicked on open store
 2015-04-09T22:20:25.364, Hans clicked begin procedure!
+2015-04-10T10:38:23.375, Hans logged in.
+2015-04-10T10:38:25.273, Hans clicked begin procedure!
+2015-04-10T10:39:14.756, Hans finished a weight session, the item was: 2, Beets, the gross weight was: 400.0 kg, and the net weight was: 370.0 kg.
+2015-04-10T10:41:54.451, Hans clicked zero scale
+2015-04-10T10:41:56.088, Hans clicked tare
+2015-04-10T10:45:35.276, Hej logged in.
+2015-04-10T10:45:38.566, Hej clicked diplay text
+2015-04-10T10:45:51.515, Hej clicked dispay text
+2015-04-10T10:47:35.923, Hans logged in.
+2015-04-10T10:47:39.300, Hans clicked dispay text
+2015-04-10T10:47:43.721, Hans clicked diplay text
+2015-04-10T10:47:43.726, Command not found:RM
+2015-04-10T10:48:43.971, Hej logged in.
+2015-04-10T10:48:46.962, Hej clicked diplay text
+2015-04-10T10:49:03.946, Hej clicked diplay text
+2015-04-10T10:50:38.937, Hej logged in.
+2015-04-10T10:50:41.572, Hej clicked begin procedure!
+2015-04-10T10:50:53.369, Hej clicked dispay text
+2015-04-10T10:51:00.250, Hej clicked diplay text
+2015-04-10T10:51:00.250, Command not found:RM
+2015-04-10T10:52:17.536, Hej logged in.
+2015-04-10T10:52:20.160, Hej clicked diplay text
+2015-04-10T10:52:25.684, Hej clicked dispay text
+2015-04-10T10:52:29.184, Hej clicked dispay text
+2015-04-10T10:52:29.803, Hej clicked dispay text
+2015-04-10T10:54:02.091, Hej logged in.
+2015-04-10T10:54:04.911, Hej clicked dispay text
+2015-04-10T10:54:06.069, Hej clicked diplay text
+2015-04-10T10:54:06.073, Command not found:RM
+2015-04-10T11:02:15.736, Hans logged in.
+2015-04-10T11:02:17.371, Hans clicked begin procedure!
+2015-04-10T11:02:42.873, Hans finished a weight session, the item was: 4, Carrots, the gross weight was: 20.0 kg, and the net weight was: 19.0 kg.
+2015-04-10T11:03:56.606, Erik logged in.
+2015-04-10T11:03:58.199, Erik clicked begin procedure!
+2015-04-10T11:05:01.055, Erik logged in.
+2015-04-10T11:05:02.795, Erik clicked begin procedure!
+2015-04-10T11:41:46.847, Hej logged in.
+2015-04-10T11:41:48.974, Hej clicked begin procedure!
+2015-04-10T11:43:00.998, Hans logged in.
+2015-04-10T11:43:03.148, Hans clicked begin procedure!
+2015-04-10T11:44:02.258, Hans logged in.
+2015-04-10T11:44:03.905, Hans clicked begin procedure!
+2015-04-10T11:44:57.784, Hans logged in.
+2015-04-10T11:45:10.004, Hans clicked begin procedure!
+2015-04-10T11:46:07.597, Hej logged in.
+2015-04-10T11:46:09.083, Hej clicked begin procedure!
+2015-04-10T11:47:07.020, Hans logged in.
+2015-04-10T11:47:08.994, Hans clicked begin procedure!
+2015-04-10T11:48:19.892, Hans logged in.
+2015-04-10T11:48:21.186, Hans clicked begin procedure!
+2015-04-10T11:51:52.989, Hej logged in.
+2015-04-10T11:51:54.990, Hej clicked begin procedure!
+2015-04-10T11:52:29.409, Hans logged in.
+2015-04-10T11:52:37.050, Hans clicked begin procedure!
+2015-04-10T11:53:25.410, Haps logged in.
+2015-04-10T11:53:27.442, Haps clicked begin procedure!
+2015-04-10T11:54:10.392, Emmas logged in.
+2015-04-10T11:54:38.565, Emmas clicked begin procedure!
